@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://cwy11e6ql1fx8"]
+
+[ext_resource type="Script" uid="uid://cwya3mitsj6tj" path="res://flash_card.gd" id="1_s1gls"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xhhby"]
+bg_color = Color(0.7327039, 0.58408695, 0.12776393, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0.5927032, 0.672123, 1)
+border_blend = true
+corner_detail = 20
+shadow_size = 5
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="FontVariation" id="FontVariation_s1gls"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0vkyy"]
+bg_color = Color(0.06535083, 0.07236559, 0.03053902, 1)
+border_width_top = 2
+border_color = Color(0.37346944, 0.38835648, 0.4793005, 1)
+corner_detail = 17
+
+[node name="FlashCard" type="PanelContainer" unique_id=595376507]
+offset_left = 395.0
+offset_top = 327.0
+offset_right = 467.0
+offset_bottom = 435.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xhhby")
+script = ExtResource("1_s1gls")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1843514949]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1318975662]
+custom_minimum_size = Vector2(1.025, 1.05)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.9923045, 0.97005016, 0.97747594, 1)
+theme_override_colors/font_shadow_color = Color(0.5063287, 0.36017093, 0.51942897, 0)
+theme_override_constants/line_spacing = 4
+theme_override_constants/paragraph_spacing = -2
+theme_override_fonts/font = SubResource("FontVariation_s1gls")
+theme_override_font_sizes/font_size = 7
+text = "This is a
+holder for
+puzzle.
+"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer" unique_id=1340895103]
+layout_mode = 2
+theme_override_font_sizes/font_size = 9
+theme_override_styles/normal = SubResource("StyleBoxFlat_0vkyy")
+placeholder_text = "answer ..."
+alignment = 1
+backspace_deletes_composite_character_enabled = true
+
+[connection signal="text_submitted" from="VBoxContainer/LineEdit" to="." method="_on_line_edit_text_submitted"]

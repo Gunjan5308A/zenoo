@@ -563,16 +563,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.747345, -4.339073, 9.8117
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.70301, -4.129715, 7.301861)
 
 [node name="FlashCard" parent="Node3D" unique_id=595376507 instance=ExtResource("37_facbu")]
-offset_left = 407.0
-offset_top = 301.0
-offset_right = 479.0
-offset_bottom = 409.0
-scale = Vector2(3.2802207, 2.758046)
+offset_left = 322.0
+offset_top = 51.0
+offset_right = 513.0
+offset_bottom = 276.0
+scale = Vector2(2.960222, 2.398046)
 size_flags_horizontal = 0
 
 [node name="endScreen" type="TextureRect" parent="Node3D" unique_id=1084544050]
 visible = false
 offset_right = 1024.0
 offset_bottom = 1024.0
-scale = Vector2(0.7220473, 0.65198964)
+scale = Vector2(0.7454, 0.6730765)
 texture = ExtResource("38_b1qrp")

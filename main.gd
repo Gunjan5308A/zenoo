@@ -17,7 +17,7 @@ func _ready():
 		print("[ERROR] flashcard_ui is null!")
 
 	print("[DEBUG] Level manager ready. Current floor:", current_floor)
-	end_screen.visible = false
+	#end_screen.visible = false
 	
 	
 func on_correct_riddle():

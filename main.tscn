@@ -571,8 +571,7 @@ scale = Vector2(2.960222, 2.398046)
 size_flags_horizontal = 0
 
 [node name="endScreen" type="TextureRect" parent="Node3D" unique_id=1084544050]
-visible = false
-offset_right = 1024.0
-offset_bottom = 1024.0
+offset_right = 2571.7734
+offset_bottom = 1619.4296
 scale = Vector2(0.7454, 0.6730765)
 texture = ExtResource("38_b1qrp")
